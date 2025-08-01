@@ -1,0 +1,230 @@
+/*** 1em = 1 rem = 16px by default  */
+
+/*** 75em = 1200px  */
+@media (max-width: 75em) {
+  .hero {
+    max-width: 120rem;
+    padding: 4rem 10rem;
+  }
+}
+
+@media (max-width: 64em) {
+  html {
+    font-size: 56%;
+  }
+  .hero {
+    max-width: 102.4rem;
+    padding: 4rem 10rem;
+  }
+  .hero-primary-heading {
+    font-size: 3.4rem;
+    width: 45rem;
+  }
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+
+  .subheading {
+    font-size: 1.4rem;
+  }
+  .heading-secondary {
+    font-size: 3rem;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial-container {
+    padding: 20rem 2rem 5rem 5rem;
+  }
+  .step--number {
+    font-size: 7rem;
+  }
+  .delivered-imgs img {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+  .delivered-text {
+    font-size: 1.2rem !important;
+  }
+  .delivered-text span {
+    font-size: 1.4rem;
+  }
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+  .step--description {
+    font-size: 1.2rem;
+  }
+  .step--img {
+    width: 30%;
+  }
+  .step-img-box::before {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+
+  .step-img-box::after {
+    width: 40%;
+    padding-bottom: 40%;
+  }
+  .meal--title {
+    font-size: 1.4rem;
+  }
+  .meal-attributes {
+    list-style: none;
+    font-size: 1.2rem;
+    gap: 1.4rem;
+  }
+  .list--attribute {
+    font-size: 1.4rem;
+  }
+  .list-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .meals-link {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  .section-testimonial {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .gallery-item img {
+    width: 100%;
+  }
+  .features-description {
+    text-align: left;
+  }
+  .testimonial-container {
+    padding: 5rem 7rem 7rem 7rem;
+  }
+  .cta {
+    grid-template-columns: 3fr 2.5fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 50em) {
+  .pricing-card {
+    width: 100%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-primary-heading {
+    padding-right: 0;
+    padding: 0 4rem 0 4rem;
+    justify-self: center;
+    text-align: center;
+  }
+  .hero-text p {
+    justify-self: center;
+    text-align: center;
+  }
+  .hero-text {
+    justify-self: center;
+  }
+  .header-buttons {
+    justify-self: center;
+  }
+  .hero-img-box {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-img {
+    padding-top: 3rem;
+    width: 30%;
+    /* It means the image will take 100% of available space of parent container which in this case is hero-img-boc container div*/
+  }
+  .delivered-box {
+    justify-content: space-around;
+    padding: 0 8rem 0 8rem;
+  }
+}
+
+@media (max-width: 45em) {
+  .pricing-card {
+    width: 100%;
+  }
+  .hero-img {
+    padding-top: 3rem;
+    width: 40%;
+    /* It means the image will take 100% of available space of parent container which in this case is hero-img-boc container div*/
+  }
+  .grid--3-col,
+  .grid--4-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    grid-column: span 2;
+    justify-self: center;
+  }
+  .container {
+    padding: 0 6rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .footer-nav {
+    grid-row: 1;
+    grid-column: span 2;
+  }
+  .contacts-col,
+  .copyright-col {
+    grid-column: span 3;
+  }
+  .footer-copyright {
+    margin: 0;
+  }
+}
+/***For Mobile Phones***/
+@media (max-width: 36em) {
+  .cta {
+    grid-template-columns: 1fr;
+  }
+  .cta-image {
+    background-position-y: -8rem;
+    height: 30rem;
+    grid-row: 1;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid--two-col {
+    grid-template-columns: 1fr;
+    row-gap: 5rem;
+  }
+  .featured-in--logo {
+    max-height: 1.6rem;
+  }
+  .featured-in--logos {
+    gap: 0.6rem;
+  }
+
+  .step-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
+  }
+  .primary-navigation {
+    display: none;
+  }
+  .hero {
+    padding: 4rem 4rem;
+  }
+}

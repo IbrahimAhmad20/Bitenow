@@ -12,7 +12,7 @@
   box-sizing: border-box;
 }
 html {
-  /* 10/16 = 0.625 --> 62.5%  -- >so Font Size : 10px === Font size : 62.5%*/
+  /** 10/16 = 0.625 --> 62.5%  -- >so Font Size : 10px === Font size : 62.5%  ****/
   font-size: 62.5%;
 }
 body {
@@ -28,7 +28,7 @@ strong {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 130rem;
   margin: 0 auto;
   padding: 0 10rem;
 }
@@ -53,15 +53,19 @@ strong {
 .grid:not(last-child) {
   margin-bottom: 6rem;
 }
+.hero-section {
+  background-color: #fdf2e9;
+  padding: 3rem 0 9.6rem 0;
+}
 .hero {
   position: relative;
   display: grid;
   margin: 0 auto;
+  max-width: 140rem;
   height: 100vh;
+  padding: 6rem 8rem;
   grid-template-columns: 1fr 1fr;
   column-gap: 5rem;
-  background-color: #fdf2e9;
-  padding: 6rem 10rem;
 }
 .hero-primary-heading,
 .heading-secondary {
@@ -74,6 +78,8 @@ strong {
   font-size: 4.2rem;
   line-height: 1.1;
   margin-bottom: 3rem;
+  padding-right: 10rem;
+  width: 55rem;
 }
 .heading-secondary {
   font-size: 3.8rem;
@@ -137,20 +143,27 @@ strong {
   width: 100%; /* It means the image will take 100% of available space of parent container which in this case is hero-img-boc container div*/
 }
 
+/******************************/
+/******* SECTION HEADER *******/
+/******************************/
+
 .omnifood-logo {
   width: 12%;
   height: auto;
 }
 
 .primary-header {
+  background-color: #fdf2e9;
+}
+.header-container {
+  padding: 0rem 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
-  padding: 0rem 4rem;
+  margin: 0 auto;
   height: 7rem;
+  max-width: 140rem;
 }
-
 .delivered-box {
   display: flex;
   margin-top: 5rem;
@@ -233,12 +246,12 @@ strong {
   transition: all 100ms;
 }
 /*********************************/
-/*  FEATURED IN SECTION   */
+/**  FEATURED IN SECTION   */
 /********************************/
 .heading-featured {
   font-size: 1.4rem;
   font-weight: 500;
-  color: ##888;
+  color: #888;
   text-transform: uppercase;
   text-align: center;
   padding: 4rem 0 2rem 0;
@@ -250,7 +263,8 @@ strong {
 }
 
 .featured-in--logo {
-  height: 3rem;
+  max-height: 3rem;
+  max-width: 11rem;
   filter: brightness(0%);
   opacity: 0.5;
 }
@@ -398,6 +412,7 @@ strong {
   align-items: center;
   gap: 1.5rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 .list-icon {
   width: 3rem;
@@ -662,6 +677,7 @@ strong {
   border-radius: 8px;
   border: none;
   outline: none;
+  width: 100%;
 }
 
 .btn--form {
