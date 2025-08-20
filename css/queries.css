@@ -144,7 +144,6 @@
   .hero-img {
     padding-top: 3rem;
     width: 30%;
-    /* It means the image will take 100% of available space of parent container which in this case is hero-img-boc container div*/
   }
   .delivered-box {
     justify-content: space-around;
@@ -159,7 +158,6 @@
   .hero-img {
     padding-top: 3rem;
     width: 40%;
-    /* It means the image will take 100% of available space of parent container which in this case is hero-img-boc container div*/
   }
   .grid--3-col,
   .grid--4-col {
